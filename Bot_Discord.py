@@ -41,6 +41,7 @@ bot = commands.Bot(command_prefix='!', intents=disnake.Intents.all())
 
 
 bot.load_extension("cogs.minecraftchecker")
+bot.load_extension("cogs.s")
 @bot.event
 async def on_ready():
     print(f'Бот готов! Подключен к {bot.user.name}')
